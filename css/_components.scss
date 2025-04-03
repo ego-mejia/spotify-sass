@@ -1,19 +1,19 @@
 @import "./variables";
 @import "./mixins";
 
-.icon-sm{
+// .icon-sm{  }
 
-      
+.action-element{
+    @include element;
+    padding: 10px 20px;
+
+
 }
 
-.main__left-container{
-    @include container;
 
-    background-color: purple;
-    
-    &-element{
-        border-radius: 8px;
-        background-color: $background-elements;
-    }
+.artist-element{
+    @include element;
+    padding: 10px 20px;
+    gap: 20px;
 
 }

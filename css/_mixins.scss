@@ -1,7 +1,31 @@
-@mixin container {
+@mixin main-container {
     display: flex;
     flex-direction: column;
 
     height: 100%;
     margin-bottom: 0;
+
+    
   }
+@mixin child-container {
+    display: flex;
+    flex-direction: column;
+
+    // height: 100%;
+    // margin-bottom: 0;
+
+    
+  }
+@mixin element {
+    border-radius: 8px;
+    background-color: $background-elements;
+    
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    &:hover{
+      background-color: $background-elements-hover;
+    }
+}

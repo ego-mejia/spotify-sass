@@ -1,13 +1,26 @@
-.main__left-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin-bottom: 0;
-  background-color: purple;
-}
-.main__left-container-element {
+.action-element {
   border-radius: 8px;
-  background-color: #121212;
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.action-element:hover {
+  background-color: #1D1D1D;
+}
+
+.artist-element {
+  border-radius: 8px;
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  gap: 20px;
+}
+.artist-element:hover {
+  background-color: #1D1D1D;
 }
 
 * {
@@ -19,6 +32,10 @@
 body {
   background-color: #000000;
   color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: white;
+  font-size: 14px;
 }
 
 .main {
@@ -31,9 +48,21 @@ body {
 }
 .main__left {
   background-color: greenyellow;
-  min-width: 282px;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  margin-bottom: 0;
+  min-width: 282px;
+  gap: 10px;
+}
+.main__left-container {
+  background-color: #131313;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+}
+.main__left-container:nth-child(2) {
   height: 100%;
   margin-bottom: 0;
 }

@@ -12,6 +12,12 @@
 body{
     background-color: $background-color;
     color: $text-color;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+    color: $text-color;
+    font-size: 14px;
 }
 
 .main{
@@ -26,16 +32,33 @@ body{
     
     &__left{
         background-color: greenyellow;
+        @include main-container;
         
         min-width: 282px;
-        @include container;
+        gap: 10px;
+
+
+        &-container{
+            background-color: $background-elements;
+            border-radius: 8px;
+            @include child-container;
+        
+            background-color: purple;
+                
+            }
+        
+        // Se agrega estilo al segundo contenedor para que ocupe toda la pantalla
+        &-container:nth-child(2) {
+            height: 100%;
+            margin-bottom: 0;
+        }
     }
 
     &__middle{
         background-color: cornflowerblue;
 
         width: 100%;
-        @include container;
+        @include main-container;
         
     }
 
@@ -43,7 +66,7 @@ body{
         background-color: coral;
         
         min-width: 386px;
-        @include container;
+        @include main-container;
     }
 
 
