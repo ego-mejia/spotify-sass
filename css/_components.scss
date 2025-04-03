@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./mixins";
+
+.icon-sm{
+
+      
+}
+
+.main__left-container{
+    @include container;
+
+    background-color: purple;
+    
+    &-element{
+        border-radius: 8px;
+        background-color: $background-elements;
+    }
+
+}

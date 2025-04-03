@@ -1,3 +1,51 @@
+@import "./variables";
+@import "./mixins";
 // Contenedores, grids, flexbox
 // header
 // footer
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100vw;  /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
+
+    background-color: rebeccapurple;
+    
+    &__left{
+        background-color: greenyellow;
+        
+        min-width: 282px;
+        @include container;
+    }
+
+    &__middle{
+        background-color: cornflowerblue;
+
+        width: 100%;
+        @include container;
+        
+    }
+
+    &__right{
+        background-color: coral;
+        
+        min-width: 386px;
+        @include container;
+    }
+
+
+
+}
