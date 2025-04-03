@@ -4,10 +4,17 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
   padding: 10px 20px;
 }
 .action-element:hover {
   background-color: #1D1D1D;
+}
+.action-element--plus-arrow {
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+  gap: 10px;
 }
 
 .artist-element {
@@ -16,6 +23,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
   padding: 10px 20px;
   gap: 20px;
 }
@@ -53,6 +61,7 @@ body {
   height: 100%;
   margin-bottom: 0;
   min-width: 282px;
+  min-width: 386px;
   gap: 10px;
 }
 .main__left-container {
