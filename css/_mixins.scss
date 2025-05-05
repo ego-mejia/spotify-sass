@@ -19,7 +19,7 @@
 @mixin element {
     border-radius: 8px;
     background-color: $background-elements;
-    
+    padding: 10px 20px;
     display: flex;
     align-items: center;
 

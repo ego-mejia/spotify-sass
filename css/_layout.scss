@@ -28,10 +28,11 @@ body{
     width: 100vw;  /* 100% del ancho de la ventana */
     height: 100vh; /* 100% de la altura de la ventana */
 
-    background-color: rebeccapurple;
+    // background-color: rebeccapurple;
+    background-color: $background-color;
     
     &__left{
-        background-color: greenyellow;
+        // background-color: greenyellow;
         @include main-container;
         
         min-width: 282px;
@@ -45,7 +46,7 @@ body{
             border-radius: 8px;
             @include child-container;
         
-            background-color: purple;
+            // background-color: purple;
                 
             }
         

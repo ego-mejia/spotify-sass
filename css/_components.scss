@@ -5,13 +5,43 @@
 
 .action-element{
     @include element;
-    padding: 10px 20px;
-
+    // padding: 10px 20px;
+    color: $color-elements;
     &--plus-arrow{
         display: flex;
         margin-right: 0;
         margin-left: auto;
         gap: 10px;
+    }
+    &--top{
+        border-radius: 8px 8px 0px 0px;
+    }
+    &--middle{
+        border-radius: 0;
+    }
+    &--bottom{
+        border-radius: 0px 0px 8px 8px;
+    }
+    &__search{
+        justify-content: space-between;
+
+        &--right{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+    &__song{
+        border-radius: 0;
+        img{
+            width: 49px;
+            border-radius: 100px
+        }
+        &:hover{
+            color: $main-color;
+        }
     }
 }
 
@@ -23,3 +53,28 @@
 }
 
 // .tags-container{}
+button{
+    background-color: $button-background;
+    border: none;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 13px;
+    border-radius: 100px;
+    &--active{
+        color: black;
+        background-color: white;
+    }
+} 
+.songs{
+    overflow-y: auto;
+}

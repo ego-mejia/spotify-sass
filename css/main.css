@@ -1,11 +1,12 @@
 .action-element {
   border-radius: 8px;
   background-color: #131313;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   gap: 20px;
   cursor: pointer;
-  padding: 10px 20px;
+  color: #BABABA;
 }
 .action-element:hover {
   background-color: #1D1D1D;
@@ -16,10 +17,40 @@
   margin-left: auto;
   gap: 10px;
 }
+.action-element--top {
+  border-radius: 8px 8px 0px 0px;
+}
+.action-element--middle {
+  border-radius: 0;
+}
+.action-element--bottom {
+  border-radius: 0px 0px 8px 8px;
+}
+.action-element__search {
+  justify-content: space-between;
+}
+.action-element__search--right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.action-element__song {
+  border-radius: 0;
+}
+.action-element__song img {
+  width: 49px;
+  border-radius: 100px;
+}
+.action-element__song:hover {
+  color: #1ED760;
+}
 
 .artist-element {
   border-radius: 8px;
   background-color: #131313;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -29,6 +60,34 @@
 }
 .artist-element:hover {
   background-color: #1D1D1D;
+}
+
+button {
+  background-color: #2B2B2B;
+  border: none;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 13px;
+  border-radius: 100px;
+}
+.badge--active {
+  color: black;
+  background-color: white;
+}
+
+.songs {
+  overflow-y: auto;
 }
 
 * {
@@ -52,10 +111,9 @@ body {
   justify-content: space-between;
   width: 100vw; /* 100% del ancho de la ventana */
   height: 100vh; /* 100% de la altura de la ventana */
-  background-color: rebeccapurple;
+  background-color: #000000;
 }
 .main__left {
-  background-color: greenyellow;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -69,7 +127,6 @@ body {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  background-color: purple;
 }
 .main__left-container:nth-child(2) {
   height: 100%;
